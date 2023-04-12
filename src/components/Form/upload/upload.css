@@ -1,0 +1,28 @@
+
+.formInput{
+    
+    justify-content: center;
+}
+.uploaded-row{
+    margin:10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #e9f0ff;
+}
+    
+.select{
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 38px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+}
+.deleteIcon{
+    color: rgb(187, 41, 41);
+    margin: 0 0 0 60px;
+}
