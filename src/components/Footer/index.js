@@ -1,6 +1,7 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaGithub } from 'react-icons/fa'
+import {MdOutgoingMail } from 'react-icons/md'
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaGithub} from 'react-icons/fa'
 import { FooterContainer, FooterWrap, FooterLink,FooterLinksContainer, 
     FooterLinksWrapper,FooterLinksTitle , FooterLinksItems, 
     SocialMedia, SocialMediaWrap, SocialLogo , WebSiteRights, SocialIcons, SocialIconLink } from './FotterElements'
@@ -11,12 +12,12 @@ export const Footer = () => {
     };
   return (
     <>
-    <FooterContainer id="Guia">
-        <FooterWrap>
+    <FooterContainer >
+        <FooterWrap >
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinksItems>
-                        <FooterLinksTitle>Sobre Nosotros</FooterLinksTitle>
+                        <FooterLinksTitle >Sobre Nosotros</FooterLinksTitle>
                             <FooterLink to='/#'> Como trabajamos </FooterLink>
                             <FooterLink to='/#'> Comentarios </FooterLink>
                             <FooterLink to='/#'> Inversores </FooterLink>
@@ -34,7 +35,7 @@ export const Footer = () => {
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
                     <FooterLinksItems>
-                        <FooterLinksTitle>Contactanos</FooterLinksTitle>
+                        <FooterLinksTitle id="Guia">Contactanos</FooterLinksTitle>
                             <FooterLink to='/#'> Envianos un mensaje </FooterLink>
                             <FooterLink to='/#'> Ayuda </FooterLink>
                             <FooterLink to='/#'> Locales </FooterLink>
@@ -78,6 +79,11 @@ export const Footer = () => {
                     <SocialIcons>
                         <SocialIconLink href="https://github.com/bryangrgs" target="_blank" aria-label="FaGithub">
                             <FaGithub></FaGithub>
+                        </SocialIconLink>
+                    </SocialIcons>
+                    <SocialIcons>
+                        <SocialIconLink href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/KtbxLzGXChsVNQDKmqTmlCFnPFlsrpzDJB?compose=CllgCJqXPdWpCgxmPnJKPnrGdHdLXGVpBxMKfffkZdrbMqFnRPzMlptPxfDRdBkxGkDrkvkSptg" target="_blank" aria-label="FaGmail">
+                            <MdOutgoingMail></MdOutgoingMail>
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>

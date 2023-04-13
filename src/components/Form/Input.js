@@ -2,6 +2,7 @@ import React from "react";
 import {Input,GrupoInput
     ,LeyendaError,IconoValidacion,Label} from './formularioElements';
 import { faCheckCircle, faTimesCircle}from "@fortawesome/free-solid-svg-icons";
+import './upload/upload.css';
 
 const ComponenteInput=({estado,cambiarEstado,label,placeholder,
     type,name,leyendaError,expresionRegular})=>{

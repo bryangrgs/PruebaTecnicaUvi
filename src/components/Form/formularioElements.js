@@ -10,6 +10,7 @@ export const Form= styled.form`
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
+z-index: 1;
 @media (max-width: 800px){
     grid-template-columns: 1fr;
 }
@@ -87,7 +88,7 @@ ${ props => props.valido ==='false' && css`
 export const   IconoValidacion = styled(FontAwesomeIcon)`
     position: absolute;
     right: 10px;
-    bottom: 14px;
+    bottom: 10px;
     z-index:100;
     font-size:16px;
     opacity:0;
@@ -161,6 +162,7 @@ background-image: linear-gradient(to top, #7721bf, #9555ce, #b180dc, #ccabe8, #e
 }
 `;
 export const Main=styled.main`
+    display: flex;
     max-width: 800px;
     
     margin: auto;

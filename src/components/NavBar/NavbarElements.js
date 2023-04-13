@@ -63,6 +63,7 @@ align-items: center;
 
 export const NavItem = styled.li`
 height: 80px;
+
 `;
 /* NavBar links */
 export const NavLinks = styled(LinkS)`
@@ -74,6 +75,7 @@ padding: 0 1rem;
 align-items: center;
 height: 100%;
 cursor: pointer;
+font-size: 18px;
  &.active{
     border-bottom: 6px solid  white;
  }

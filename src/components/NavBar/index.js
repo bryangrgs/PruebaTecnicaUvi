@@ -69,7 +69,7 @@ const NavBar = ({toggle}) =>{
                         spy={true}
                         exact='true'
                         offset={-80}
-                        activeClass="active">Planes</NavLinks>
+                        >Planes</NavLinks>
                     </NavItem>
                     
                     
@@ -87,7 +87,8 @@ const NavBar = ({toggle}) =>{
                         duration={500}
                         spy={true}
                         exact='true'
-                        offset={-80}>contacto</NavLinks>
+                        offset={-80}>Contacto
+                        </NavLinks>
                     </NavItem>
                
             </NavMenu>

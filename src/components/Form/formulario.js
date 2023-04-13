@@ -24,8 +24,15 @@ import { Form2 } from "./formularioElements";
     const [usuario, cambiarUsuario]= useState({campo: "" ,  valido: null});
     const [correo, cambiarCorreo]= useState({campo: "" ,  valido: null});
     const [telefono, cambiarTelefono]= useState({campo: "" ,  valido: null});
-    const[terminos,cambiarTerminos]=useState(false)
+    const[terminos,cambiarTerminos]=useState(false);
     const [formularioValido, cambiarFormularioValido] = useState(null);
+    const [selecionado,cambiarSeleccionado]=useState(false);
+    const seleccion ={
+        sinplan:"Seleccione un plan",
+        plan1:"plan1",
+        plan2:"plan2",
+        plan3:"plan3"
+    }
     const expresiones = {
 		usuario: /^[a-zA-Z0-9_-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 		correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -42,8 +49,10 @@ import { Form2 } from "./formularioElements";
         correo.valido === 'true' &&
         telefono.valido === 'true' &&
         terminos                   &&
-        image
+        image                      &&
+        selecionado 
         ){
+            
             cambiarFormularioValido(true);
             cambiarUsuario({campo:'',valido:null});
             cambiarTelefono({campo:'',valido:null});
@@ -87,10 +96,12 @@ import { Form2 } from "./formularioElements";
                estado={telefono}
                cambiarEstado={cambiarTelefono}
                />
-               <select className="select" name="select" >
-  <option value="value1"> plan 1</option>
-  <option value="value2" selected>plan 2</option>
-  <option value="value3">plan 3</option>
+               
+               <select className="select" name="select" onSelect ={selecionado} onChange={cambiarSeleccionado}>
+               <option value="value0" >{seleccion.sinplan}</option>
+                <option value="value1" >{seleccion.plan1}</option>
+             <option value="value2" >{seleccion.plan2}</option>
+             <option value="value3" >{seleccion.plan3}</option>
 </select>
                <main>
         <Form2  onClick={()=> document.querySelector(".formInput").click()}>
